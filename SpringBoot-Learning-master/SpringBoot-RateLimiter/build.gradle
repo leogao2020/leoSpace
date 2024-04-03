@@ -1,0 +1,8 @@
+dependencies {
+    implementation project(':SpringBoot-Support')
+    implementation group: 'org.aspectj', name: 'aspectjrt', version: '1.9.2'
+    implementation 'org.aspectj:aspectjweaver:1.7.2'
+    implementation group: 'com.google.guava', name: 'guava', version: '27.0-jre'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.6.0'
+    testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.0.4.RELEASE'
+}

@@ -1,0 +1,46 @@
+// 定义扩展属性 (给脚本用的脚本)
+buildscript {
+    ext {
+        springBootVersion = "2.6.7" // 将此版本号更改为所需的Spring Boot最新版本
+    }
+    repositories {
+        mavenLocal()
+        mavenCentral() // 从Gradle 7.0开始，推荐直接使用mavenCentral()代替之前的url
+        jcenter() // 注意：JCenter已不再推荐作为主仓库使用，仅用于获取历史遗留依赖
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+allprojects {
+    group = 'com.dashuai.learning'
+    version = '1.0.0'
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'maven-publish'
+    apply plugin: 'org.springframework.boot'  // 使用Spring Boot插件
+    apply plugin: 'io.spring.dependency-management'  // 版本管理插件
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    tasks.withType(JavaCompile) {
+        options.encoding = 'UTF-8'
+    }
+
+    repositories {
+        mavenLocal()
+        mavenCentral() // 同样替换为mavenCentral()以简化配置
+        jcenter() // 如前所述，谨慎使用JCenter
+    }
+
+    dependencies {
+        implementation 'org.projectlombok:lombok:1.18.24' // 更新Lombok版本至较新稳定版本
+        implementation group: 'io.springfox', name: 'springfox-swagger2', version: '3.0.0' // 更新Swagger2版本至较新稳定版本
+        implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '3.0.0' // 同样更新Swagger UI版本
+        testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter', version: '5.8.2' // 使用JUnit 5并更新至较新稳定版本
+    }
+}

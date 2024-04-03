@@ -32,6 +32,7 @@ public class UserController {
 
     @PostMapping(value = "/register")
     public Response register(@RequestBody UserRegisterCmd cmd) {
+
         userService.register(cmd);
         return Response.buildSuccess();
     }

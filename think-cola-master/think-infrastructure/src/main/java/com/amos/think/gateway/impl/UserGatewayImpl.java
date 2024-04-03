@@ -110,7 +110,7 @@ public class UserGatewayImpl implements UserGateway {
         if (insert < 1) {
             throw new PersistenceException("保存用户异常");
         }
-
+        userEntity.setId(userDO.getId());
         //发出异步消息
         UserRegisterEvent userRegisterEvent = genUserRegisterEvent(userEntity);
         domainEventPublisher.publish(DomainEventConstant.USER_REGISTER_TOPIC,userRegisterEvent);
@@ -152,6 +152,7 @@ public class UserGatewayImpl implements UserGateway {
     private UserRegisterEvent genUserRegisterEvent(UserEntity userEntity) {
         UserRegisterEvent userRegisterEvent=new UserRegisterEvent();
         userRegisterEvent.setId(userEntity.getId());
+        userRegisterEvent.setName(userEntity.getName());
         userRegisterEvent.setUsername(userEntity.getUsername().getName());
         userRegisterEvent.setPassword(userEntity.getPassword().getEncryptPassword());
         userRegisterEvent.setPhoneNo(userEntity.getPhoneNo());

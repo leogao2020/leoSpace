@@ -1,5 +1,9 @@
 package com.demo.thinkquery.order;
+import org.springframework.stereotype.Component;
 
-public class OrderGatewayImpl{
+import java.util.List;
+
+@Component
+public class OrderGatewayImpl {
 
 }

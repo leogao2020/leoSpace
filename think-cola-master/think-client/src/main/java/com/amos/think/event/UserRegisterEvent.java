@@ -1,8 +1,11 @@
 package com.amos.think.event;
 
+import lombok.NoArgsConstructor;
+
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
+@NoArgsConstructor
 public class UserRegisterEvent extends DomainEvent {
     private Long id;
 

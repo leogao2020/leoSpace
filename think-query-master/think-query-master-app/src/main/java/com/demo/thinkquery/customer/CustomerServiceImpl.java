@@ -7,7 +7,6 @@ import com.demo.thinkquery.api.CustomerServiceI;
 import com.demo.thinkquery.dto.CustomerAddCmd;
 import com.demo.thinkquery.dto.CustomerListByNameQry;
 import com.demo.thinkquery.dto.data.CustomerDTO;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.demo.thinkquery.customer.executor.CustomerAddCmdExe;

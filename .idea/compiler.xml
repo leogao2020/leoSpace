@@ -20,8 +20,5 @@
         <module name="think-app" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="think-query-master-parent" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

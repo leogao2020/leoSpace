@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="start" />
+        <module name="craftsman-adapter" />
+        <module name="craftsman-domain" />
+        <module name="craftsman-infrastructure" />
+        <module name="craftsman-client" />
+        <module name="craftsman-app" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

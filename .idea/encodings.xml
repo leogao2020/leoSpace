@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/think-cola-master/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/think-cola-master/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/think-cola-master/think-app/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/think-cola-master/think-app/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/think-cola-master/think-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/think-cola-master/think-client/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/think-cola-master/think-controller/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/think-cola-master/think-controller/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/think-cola-master/think-domain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/think-cola-master/think-domain/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/think-cola-master/think-infrastructure/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/think-cola-master/think-infrastructure/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/think-cola-master/think-start/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/think-cola-master/think-start/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/think-query-master/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/think-query-master/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/think-query-master/start/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/think-query-master/start/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/think-query-master/think-query-master-adapter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/think-query-master/think-query-master-adapter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/think-query-master/think-query-master-app/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/think-query-master/think-query-master-app/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/think-query-master/think-query-master-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/think-query-master/think-query-master-client/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/think-query-master/think-query-master-domain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/think-query-master/think-query-master-domain/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/think-query-master/think-query-master-infrastructure/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/think-query-master/think-query-master-infrastructure/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

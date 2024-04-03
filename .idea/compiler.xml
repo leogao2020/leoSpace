@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="think-infrastructure" />
+        <module name="think-query-master-domain" />
+        <module name="think-client" />
+        <module name="think-query-master-infrastructure" />
+        <module name="think-query-master-adapter" />
+        <module name="think-controller" />
+        <module name="think-domain" />
+        <module name="start" />
+        <module name="think-query-master-client" />
+        <module name="think-query-master-app" />
+        <module name="think-start" />
+        <module name="think-app" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="think-query-master-parent" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

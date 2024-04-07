@@ -19,7 +19,7 @@
     <insert id="insert" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO org_user
         ( username, name, password, info_id,
-        creator, gmt_create, modifier, gmt_modified , delete_flag )
+        creator, gmt_create, modifier, gmt_modify , delete_flag )
         VALUES
         ( #{username}, #{name}, #{password}, #{infoId},
         #{creator}, #{gmtCreate}, #{modifier}, #{gmtModify}, #{deleteFlag} )

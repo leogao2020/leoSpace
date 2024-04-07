@@ -21,4 +21,14 @@
       </profile>
     </annotationProcessing>
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="think-app" options="--add-opens=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED" />
+      <module name="think-client" options="--add-opens=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED" />
+      <module name="think-controller" options="--add-opens=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED" />
+      <module name="think-domain" options="--add-opens=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED" />
+      <module name="think-infrastructure" options="--add-opens=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED" />
+      <module name="think-start" options="--add-opens=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED" />
+    </option>
+  </component>
 </project>

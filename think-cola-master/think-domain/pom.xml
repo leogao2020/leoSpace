@@ -49,8 +49,24 @@
     </dependencies>
 
     <build>
-        <pluginManagement>
             <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>3.2.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.8.1</version>
+                    <configuration>
+                        <source>11</source> <!-- Or your target Java version -->
+                        <target>11</target> <!-- Or your target Java version -->
+                        <compilerArgs>
+                            <arg>--add-opens=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED</arg>
+                        </compilerArgs>
+                    </configuration>
+                </plugin>
                 <plugin>
                     <artifactId>maven-deploy-plugin</artifactId>
                     <configuration>
@@ -58,6 +74,5 @@
                     </configuration>
                 </plugin>
             </plugins>
-        </pluginManagement>
     </build>
 </project>

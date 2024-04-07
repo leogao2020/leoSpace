@@ -13,7 +13,7 @@ public class DomainEventPublisher {
     private KafkaTemplate<String, Object> kafkaTemplate;
     public void publish(String topic, Object msg){
         // publish event
-        ProducerRecord<String, Object> pr = new ProducerRecord<>(topic, msg);
+        ProducerRecord<String, Object> pr = new ProducerRecord<>(topic,msg);
         pr.headers().add("type", msg.getClass().getName().getBytes(StandardCharsets.UTF_8));
         kafkaTemplate.send(pr);
     }

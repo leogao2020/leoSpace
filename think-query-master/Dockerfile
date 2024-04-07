@@ -1,5 +1,5 @@
 # 第一阶段：构建和打包应用
-FROM arm64v8/maven:3.8.1 AS builder
+FROM arm64v8/maven:3.8.1  AS builder
 WORKDIR /app
 COPY . .
 RUN mvn clean package -DskipTests
@@ -8,7 +8,7 @@ RUN mvn clean package -DskipTests
 FROM arm64v8/openjdk
 WORKDIR /app
 
-
-COPY --from=builder /app/start/target/start-1.0.0-SNAPSHOT-jar-with-dependencies.jar /app/start-1.0.0-SNAPSHOT-jar-with-dependencies.jar
+COPY --from=builder /app/start/target/lib /app/lib
+COPY --from=builder /app/start/target/start-1.0.0-SNAPSHOT.jar /app/start.jar
 EXPOSE 8081
-CMD ["java", "-jar", "start-1.0.0-SNAPSHOT-jar-with-dependencies.jar"]
+CMD ["java", "-jar", "start.jar"]

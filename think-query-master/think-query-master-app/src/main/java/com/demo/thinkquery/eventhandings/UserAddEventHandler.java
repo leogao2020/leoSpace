@@ -16,7 +16,7 @@ public class UserAddEventHandler {
     @Autowired
     private UserGateway userGateway;
 
-    @KafkaListener(topics = DomainEventConstant.USER_REGISTER_TOPIC)
+    @KafkaListener(topics = DomainEventConstant.USER_REGISTER_TOPIC )
     public void onUserRegister(ConsumerRecord<String,Object> event) {
         UserRegisterEvent userRegisterEvent = (UserRegisterEvent)event.value();
         if(userRegisterEvent!=null){

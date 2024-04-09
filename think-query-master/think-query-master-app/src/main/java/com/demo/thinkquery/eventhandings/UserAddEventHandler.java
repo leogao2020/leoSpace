@@ -5,7 +5,6 @@ import com.amos.think.event.UserRegisterEvent;
 import com.demo.thinkquery.domain.user.User;
 import com.demo.thinkquery.domain.user.gateway.UserGateway;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
-import org.apache.kafka.common.protocol.types.Field;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;

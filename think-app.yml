@@ -7,19 +7,6 @@ services:
     - 3306:3306
     environment:
     - MYSQL_ROOT_PASSWORD=Coolpile007
- zookeeper-server:
-    container_name: zookeeper-server
-    image: zookeeper:latest
-    ports:
-    - 2181:2181
- kafka-server:
-      container_name: kafka-server
-      image: apache/kafka:latest
-      ports:
-      - 9092:9092
-      - 9093:9093
-      environment:
-      - KAFKA_ZOOKEEPER_CONNECT:zookeeper-server:2181
  think:
     container_name: think
     image: leogao2020/demo:1.0

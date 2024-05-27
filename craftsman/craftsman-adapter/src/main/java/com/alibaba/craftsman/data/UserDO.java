@@ -1,15 +1,11 @@
-package com.demo.thinkquery.domain.user;
+package com.alibaba.craftsman.data;
 
-
-import com.alibaba.cola.domain.Entity;
 import lombok.Data;
 
-import java.io.Serializable;
 import java.time.LocalDate;
 
-@Entity
 @Data
-public class User implements Serializable {
+public class UserDO {
     private Long id;
 
     /**
@@ -42,5 +38,4 @@ public class User implements Serializable {
      * 描述
      */
     private String description;
-
 }

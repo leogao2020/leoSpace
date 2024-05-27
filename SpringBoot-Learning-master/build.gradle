@@ -6,7 +6,6 @@ buildscript {
     repositories {
         mavenLocal()
         mavenCentral() // 从Gradle 7.0开始，推荐直接使用mavenCentral()代替之前的url
-        jcenter() // 注意：JCenter已不再推荐作为主仓库使用，仅用于获取历史遗留依赖
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")

@@ -7,13 +7,13 @@ services:
     - 3306:3306
     environment:
     - MYSQL_ROOT_PASSWORD=Coolpile007
- think:
-    container_name: think
-    image: leogao2020/demo:1.0
-    ports:
-    - 8080:8080
- think-query:
-    container_name: think-query
-    image: leogao2020/demo:think-query-1.0
-    ports:
-    - 8081:8081
+# think:
+#    container_name: think
+#    image: leogao2020/demo:think-1.0.0
+#    ports:
+#    - 8080:8080
+# think-query:
+#    container_name: think-query
+#    image: leogao2020/demo:think-query-1.0
+#    ports:
+#    - 8081:8081

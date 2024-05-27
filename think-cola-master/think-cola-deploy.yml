@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: think-cola
+  labels:
+    app: think-cola
+spec:
+  replicas: 1 # 根据需要调整副本数
+  selector:
+    matchLabels:
+      app: think-cola
+  template:
+    metadata:
+      labels:
+        app: think-cola
+    spec:
+      containers:
+        - name: think-cola-container
+          image: leogao2020/demo:think-cola-demo-1.0 # 替换为实际的镜像地址
+          ports:
+            - containerPort: 8080
+          env:
+            - name: APP_ENV
+              value: "dev" # 环境变量示例

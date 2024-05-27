@@ -8,14 +8,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="think-infrastructure" />
         <module name="think-query-master-domain" />
-        <module name="think-client" />
         <module name="think-query-master-infrastructure" />
-        <module name="think-query-master-adapter" />
         <module name="think-controller" />
         <module name="think-domain" />
         <module name="start" />
-        <module name="think-query-master-client" />
         <module name="think-query-master-app" />
+        <module name="think-client" />
+        <module name="think-query-master-adapter" />
+        <module name="think-client (2)" />
+        <module name="think-client (1)" />
+        <module name="think-query-master-client" />
         <module name="think-start" />
         <module name="think-app" />
       </profile>
@@ -25,6 +27,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="think-app" options="--add-opens=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED" />
       <module name="think-client" options="--add-opens=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED" />
+      <module name="think-client (1)" options="--add-opens=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED" />
+      <module name="think-client (2)" options="--add-opens=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED" />
       <module name="think-controller" options="--add-opens=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED" />
       <module name="think-domain" options="--add-opens=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED" />
       <module name="think-infrastructure" options="--add-opens=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED" />

@@ -14,8 +14,8 @@ import javax.annotation.Resource;
 /**
  * 用户相关
  *
- * @author <a href="mailto:daoyuan0626@gmail.com">amos.wang</a>
- * @date 2021/1/8
+ * @author leogao
+ * @date 2024/05/24
  */
 @RestController
 @RequestMapping("user")
@@ -32,7 +32,6 @@ public class UserController {
 
     @PostMapping(value = "/register")
     public Response register(@RequestBody UserRegisterCmd cmd) {
-
         userService.register(cmd);
         return Response.buildSuccess();
     }

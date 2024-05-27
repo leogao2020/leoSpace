@@ -2,27 +2,32 @@ package com.dashuai.learning.ratelimiter.service;
 
 import com.google.common.util.concurrent.RateLimiter;
 
+
 /**
- * Rate limiter service
- * <p/>
- * Created in 2018.11.16
- * <p/>
- *
- * @author LeoGao
+ * 限流服务类，提供创建和获取限流器的接口。
  */
 public class RateLimiterService {
-    private RateLimiter rateLimiter;
+    // 限流器实例
+    private final RateLimiter rateLimiter;
 
-
+    /**
+     * 构造函数，用于创建限流服务。
+     *
+     * @param count 限流器允许的请求数量。
+     */
     public RateLimiterService(Integer count) {
-        rateLimiter = RateLimiter.create(Double.valueOf(count));
+        // 根据给定的请求数量创建限流器
+        this.rateLimiter = RateLimiter.create(count);
     }
 
     /**
-     * 创建令牌桶，每秒生成10个令牌，意味着每秒10个tps
+     * 获取限流器实例的方法。
+     *
+     * @return 返回此服务配置的限流器实例。
      */
     public RateLimiter rateLimiter() {
         return rateLimiter;
     }
 
 }
+

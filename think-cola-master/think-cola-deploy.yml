@@ -18,7 +18,19 @@ spec:
         - name: think-cola-container
           image: leogao2020/demo:think-cola-demo-1.0 # 替换为实际的镜像地址
           ports:
-            - containerPort: 8080
+            - name: http
+              containerPort: 8080
+              protocol: TCP
+            - name: debug-port
+              containerPort: 5005
+              protocol: TCP
           env:
             - name: APP_ENV
               value: "dev" # 环境变量示例
+            - name: MYSQL_NAME_PORT
+              value: "mysql-server:3306"
+            - name: KAFKA_NAME_PORT
+              value: "kafka-server:9092"
+            - name: JAVA_TOOL_OPTIONS
+              value: "-Xdebug -agentlib:jdwp=transport=dt_socket,address=0.0.0.0:5005,server=y,suspend=n"
+

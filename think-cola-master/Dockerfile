@@ -12,6 +12,7 @@ COPY --from=builder /app/think-start/target/lib /app/lib
 COPY --from=builder /app/think-start/target/think-start-1.0.0-SNAPSHOT.jar /app/think-start.jar
 EXPOSE 8080
 #CMD ["java", "-jar", "think-start.jar"]
-
+ENV MYSQL_NAME_PORT="mysql-server:3306"
+ENV KAFKA_NAME_PORT="kafka-server:9092"
 ENV JAVA_OPTS=$JAVA_OPTS
 ENTRYPOINT [ "sh", "-c", "java -cp '/app/lib/*:/app/think-start.jar:' -jar /app/think-start.jar" ]

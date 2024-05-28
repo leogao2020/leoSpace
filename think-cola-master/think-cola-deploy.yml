@@ -5,7 +5,7 @@ metadata:
   labels:
     app: think-cola
 spec:
-  replicas: 1 # 根据需要调整副本数
+  replicas: 3 # 根据需要调整副本数
   selector:
     matchLabels:
       app: think-cola

@@ -20,5 +20,7 @@ spec:
           ports:
             - containerPort: 8081 # 或者是您的应用监听的端口
           env:
-            - name: APP_ENV
-              value: "dev" # 环境变量示例
+            - name: MYSQL_NAME_PORT
+              value: "mysql-server:3306"
+            - name: KAFKA_NAME_PORT
+              value: "kafka-server:9092"
